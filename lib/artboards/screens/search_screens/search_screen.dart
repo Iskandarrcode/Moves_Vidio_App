@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:may9/artboards/screens/action_button/float_action_button.dart';
+import 'package:may9/artboards/widgets/action_button/float_action_button.dart';
 import 'package:zoom_tap_animation/zoom_tap_animation.dart';
 
 class SearchScreen extends StatelessWidget {
@@ -11,7 +11,8 @@ class SearchScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xff05001E),
       body: Padding(
-        padding: const EdgeInsets.all(20),
+        padding:
+            const EdgeInsets.only(top: 20, left: 20, right: 20, bottom: 10),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -358,7 +359,7 @@ class SearchScreen extends StatelessWidget {
           ],
         ),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: const ActionButton(),
     );
   }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:may9/artboards/screens/action_button/float_action_button.dart';
+import 'package:may9/artboards/widgets/action_button/float_action_button.dart';
 
 class DownloadScreen extends StatelessWidget {
   const DownloadScreen({super.key});
@@ -10,7 +10,8 @@ class DownloadScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xff05001E),
       body: Padding(
-        padding: const EdgeInsets.all(20),
+        padding:
+            const EdgeInsets.only(top: 20, left: 20, right: 20, bottom: 10),
         child: Column(
           children: [
             SizedBox(height: 30.h),
@@ -266,7 +267,7 @@ class DownloadScreen extends StatelessWidget {
           ],
         ),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: const ActionButton(),
     );
   }
